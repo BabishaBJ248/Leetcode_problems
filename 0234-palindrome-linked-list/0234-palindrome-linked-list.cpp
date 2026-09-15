@@ -11,12 +11,10 @@
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
-        stack<int> sta;
-        int top=-1;
+        stack<int>sta;
         ListNode *temp=head;
         while(temp!=NULL)
         {
-            top++;
             sta.push(temp->val);
             temp=temp->next;
         }
